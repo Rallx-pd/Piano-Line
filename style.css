@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.815);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard-container {
+  padding: 9rem 3rem 1.6rem;
+  background-image: url(assets/textura.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+
+.toggle-button {
+  position: absolute;
+  right: 4%;
+  top: 8%;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.toggle-button::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #000;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle-button:hover {
+  filter: brightness(0.8);
+}
+
+.title {
+  display: flex;
+  font-family: "Playwrite NZ", cursive;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  top: 150px;
+  position: absolute;
+  z-index: 2;
+  color: antiquewhite;
+}
+
+.keys {
+  position: relative;
+  cursor: pointer;
+}
+
+.white-keys {
+  display: flex;
+}
+
+.white-key {
+  width: 68px;
+  height: 280px;
+  background: antiquewhite;
+  border: 2px solid #000;
+  border-radius: 15px 15px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+.white-key:hover {
+  background: linear-gradient(to right, #433bb4e0, #923bb4e0, #b43baee0);
+}
+
+.black-key {
+  position: absolute;
+  top: 0;
+
+  width: 38px;
+  height: 160px;
+  background: #000;
+  border: 2px solid #000;
+  border-radius: 15px 15px;
+
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.black-key:hover {
+  background: linear-gradient(to right, #acadad, #6d6d6e, #202121);
+}
+
+.black-key:nth-child(1) {
+  left: 49px;
+}
+.black-key:nth-child(2) {
+  left: 117px;
+}
+.black-key:nth-child(3) {
+  left: 253px;
+}
+.black-key:nth-child(4) {
+  left: 321px;
+}
+.black-key:nth-child(5) {
+  left: 389px;
+}
+.black-key:nth-child(6) {
+  left: 525px;
+}
+.black-key:nth-child(7) {
+  left: 593px;
+}
+.black-key:nth-child(8) {
+  left: 729px;
+}
+.black-key:nth-child(9) {
+  left: 797px;
+}
+.black-key:nth-child(10) {
+  left: 865px;
+}
+
+.hide-text {
+  font-size: 0;
+}
